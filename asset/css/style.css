@@ -49,7 +49,18 @@ section {
 	}
 .bienvenida h1 {
 	font-size: xx-large;
+	animation-duration: 3s; /*animacion titulo*/
+	animation-name: aparecer;
+	animation-iteration-count: infinite;
 	}
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .bienvenida img {
 	width: 700px;
 	}
@@ -118,12 +129,24 @@ section .camas {
 	font-size: xx-large;
 	margin: 2px;
 	padding: 2px;
+	animation-duration: 2s; /*animacion titulo*/
+	animation-name: aparecer;
+	animation-iteration-count: infinite;
+	}
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	
 }
 .habitaciones p {
 	font-size: large;
 	margin: 2px;
 	padding: 2px;
-     }
+	}
 .tarjetas {
 	grid-area: div;
 	display: flex;
@@ -137,6 +160,7 @@ section .camas {
 	padding: 5px;
 	width: 30%;
 	font-size: larger;
+	transform: rotate(2deg);
 	}
 .tarjeta2 {
 	text-align: center;
@@ -145,6 +169,7 @@ section .camas {
 	padding: 5px;
 	width: 30%;
 	font-size: larger;
+	transform: rotate(2deg);
 	}
 .tarjeta3 {
 	text-align: center;
@@ -153,6 +178,7 @@ section .camas {
 	padding: 5px;
 	width: 30%;
 	font-size: larger;
+	transform: rotate(2deg);
 	}
 .nosotros { /*pag. sobre nosotros*/
 	background-image: url(../img/fondo-web.jpg);
@@ -192,7 +218,7 @@ section .camas {
 .desayuno img {
 	margin: 10px;
 	padding: 10px;
-}
+	}
 .contacto {
 	background-image: url(../img/fondo-web.jpg);
 	background-size: cover;
@@ -212,6 +238,14 @@ section .camas {
 	}
 .contactanos { /*pag. contacto*/
 	font-size: large;
+		}
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 form {
 	display: flex;
