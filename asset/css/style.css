@@ -1,0 +1,361 @@
+* { margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+.inicio {   /*pagina index*/
+	background-image: url(../img/fondo-web.jpg);
+	background-size: cover;
+	font-family: "roboto","sans serif", "calibri";
+	display: grid;
+	grid-template-columns: 20% auto 25%; /*3 columnas*/
+	grid-template-rows: repeat(5,auto);
+	grid-template-areas:  "menu menu menu"
+	                      "section section div"
+						  "section section div"
+						  "section section div"
+						  "footer footer footer" ;
+	}
+
+.menu {	
+	    grid-area: menu;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	    background-color: #616161;
+		padding: 1rem;
+		justify-content: space-around;
+    }
+.menu nav {
+	font-size: x-large;
+	color: white;
+	list-style-type: none;
+	}
+.menuNav li {
+	display: inline-block;
+	}
+.menuNav li a {
+	text-decoration: none;
+	color: white;
+	padding: 0 20px;
+	}
+section {
+	grid-area: section;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: aliceblue;
+	padding: 2rem;
+	}
+.bienvenida h1 {
+	font-size: xx-large;
+	}
+.bienvenida img {
+	width: 700px;
+	}
+.bienvenida p {
+		font-size: larger;
+		padding: 1rem;
+	}
+div .ubicacion {
+		grid-area: div;
+		background-color: #616161;
+		width: 320px;
+		border: 10px;
+		border-style: solid;
+		border-color: rgb(187, 180, 180);
+		margin: 10px;
+		padding: 10px;
+	}
+.ubicacion h2 {
+	color: aliceblue;
+	text-align: center;
+	font-size: x-large;
+}
+.ubicacion p {
+	color: aliceblue;
+	text-align: justify;
+	font-size: large;
+}
+.mapa {
+		padding: 10px;
+		width: 90%;
+	}
+footer {
+	grid-area: footer;	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	color: aliceblue;
+	padding: 5px;
+	width: 100%;
+	}
+	.pie h3 {
+		margin: 5px;
+		padding: 5px;
+	}
+	.pie a {
+		color: aliceblue;
+		text-decoration: none;
+	}
+.habitaciones { /*pagina habitaciones*/
+	background-image: url(../img/fondo-web.jpg);
+	background-size: cover;
+	font-family: "roboto","sans serif", "calibri";
+	display: grid;
+	grid-template-columns:30% auto 30%; /*3 columnas*/
+	grid-template-rows: 100px 200px 1fr 75px; /*4 filas*/
+	grid-template-areas:  "menu menu menu"
+	                      "section section section"
+						   "div div div"
+						  "footer footer footer" ;
+	
+}
+section .camas {
+	grid-area: section;
+}
+.habitaciones h1 {
+	font-size: xx-large;
+	margin: 2px;
+	padding: 2px;
+}
+.habitaciones p {
+	font-size: large;
+	margin: 2px;
+	padding: 2px;
+     }
+.tarjetas {
+	grid-area: div;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.tarjeta1 {
+	justify-content: center;
+	color: aliceblue;
+	margin: 5px;
+	padding: 5px;
+	width: 30%;
+	font-size: larger;
+	}
+.tarjeta2 {
+	text-align: center;
+	color: aliceblue;
+	margin: 5px;
+	padding: 5px;
+	width: 30%;
+	font-size: larger;
+	}
+.tarjeta3 {
+	text-align: center;
+	color: aliceblue;
+	margin: 5px;
+	padding: 5px;
+	width: 30%;
+	font-size: larger;
+	}
+.nosotros { /*pag. sobre nosotros*/
+	background-image: url(../img/fondo-web.jpg);
+	background-size: cover;
+	font-family: "roboto","sans serif", "calibri";
+	display: grid;
+	grid-template-columns:30% auto 30%; /*3 columnas*/
+	grid-template-rows: 100px 200px 1fr 75px; /*4 filas*/
+	grid-template-areas:  "menu menu menu"
+	                      "section section section"
+						   "section section section"
+						  "footer footer footer"
+}
+.sobrenos {
+	grid-area: section;
+	font-size: larger;
+	}
+.servicios {  /*servicios*/
+	background-image: url(../img/fondo-web.jpg);
+	background-size: cover;
+	font-family: "roboto","sans serif", "calibri";
+	display: grid;
+	grid-template-columns:30% auto 30%; /*3 columnas*/
+	grid-template-rows: 100px 1fr 75px; /*3 filas*/
+	grid-template-areas:  "menu menu menu"
+	                      "section section section"
+						   "section section section"
+						  "footer footer footer"
+}
+.desayuno { 
+	grid-area: section;
+	display: flex;
+	flex-direction: column;
+	font-size: large;
+	align-items: center
+}
+.desayuno img {
+	margin: 10px;
+	padding: 10px;
+}
+.contacto {
+	background-image: url(../img/fondo-web.jpg);
+	background-size: cover;
+	font-family: "roboto","sans serif", "calibri";
+	display: grid;
+	grid-template-columns:30% auto 30% /*3 columnas*/;
+	grid-template-rows: repeat(4,auto) /*4 filas*/;
+	grid-template-areas:  "menu menu menu"
+	                      "section section section"
+						   "div div div"
+						  "footer footer footer";
+}
+.caja {
+	display: flex;
+	justify-content: center;
+	grid-area: div;
+	}
+.contactanos { /*pag. contacto*/
+	font-size: large;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items:stretch;
+	font-size: larger;
+	color: aliceblue;
+	background-color: #616161;
+	width: 400px;
+	margin: 5px;
+	padding: 1rem;
+}
+form input, select {
+	padding: 0.5rem;
+	border-radius: 5px;
+	margin: 0.5rem 0;
+}
+/*responsive media queries*/
+@media (max-width: 480px) {  /*responsive index*/
+	.inicio {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto 100px;
+		grid-template-areas: "menu menu"
+		                    "section section"
+							"div div"
+							"footer footer";
+	}
+	.menu {
+		height: auto;
+		width: 100%;
+	}
+	.menulogo {
+		display: none
+	}
+	.menu nav ul li {
+		display: block;
+		font-size: large;
+		margin: 0.5rem;
+	}
+	.bienvenida {
+		grid-area: section;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.bienvenida article {
+		font-size: small;
+	}
+	.bienvenida img {
+		width: 100%;
+		}
+	.mapa {
+		width: 100%;
+	}
+	.ubicacion {
+		grid-area: div;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
+	.pie {
+		grid-area: footer;
+		display: block;
+	}
+	.ubicacion p {
+		padding: 1rem;
+	}
+	/*responsive de servicios*/
+	.servicios {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto 100px;
+		grid-template-areas: "menu menu"
+		                    "section section"
+							"footer footer"
+	}
+	/*responsive sobre nosotros*/
+	.nosotros {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto 100px;
+		grid-template-areas: "menu menu"
+		                    "section section"
+							"footer footer"
+	}
+	.sobrenos {
+		display: flex;
+		flex-direction: column;
+		font-size: small;
+		padding: 2px;
+	}
+	
+	.sobrenos img {
+		width: 150px;
+		height: auto;
+	}
+	/*responsive contacto*/
+	.contacto {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto 100px;
+		grid-template-areas: "menu menu"
+		                    "section section"
+							"div div"
+							"div div"
+							"footer footer"
+	}
+	.contactanos {
+		grid-area: section;
+		display: flex;
+		flex-direction: column;
+		font-size: small;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+		padding: 2rem;
+	}
+	.caja {
+		grid-area: div;
+	}
+	.formulario {
+		font-size: small;
+		width: 200px;
+	}
+	.habitaciones{ /*responsive habitaciones*/
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto 100px;
+		grid-template-areas: "menu menu"
+		                    "section section"
+							"div div"
+							"div div"
+							"div div"
+							"footer footer"
+	}
+	.camas {
+		grid-area: section;
+		display: flex;
+		flex-direction: column;
+		}
+	.intro {
+		font-size: small;
+	}
+	.tarjetas {
+		grid-area: div;
+		display: flex;
+		flex-direction: column;
+	}
+}
